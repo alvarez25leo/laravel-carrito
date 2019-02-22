@@ -1,0 +1,45 @@
+{
+    "name": "manuelleo/laravcart",
+    "description": "Simple carrito de compras para laravel 5.*",
+    "license": "MIT",
+    "type":"library",
+    "minimum-stability":"dev",
+    "keywords": [
+        "Cart",
+        "php cart",
+        "Shopping cart",
+        "Laravel shopping cart",
+        "Laravel cart"
+    ],
+    "authors": [
+        {
+            "name": "Leonardo Manuel Alvarez",
+            "email": "alvarez25leo@gmail.com"
+        }
+    ],
+    "homepage": "https://github.com/alvarez25leo/laravel-cart",
+    "require": {
+        "php": "^7.1.3",
+        "symfony/http-foundation": "^4.2",
+        "illuminate/support": "^5.7.27",
+        "manuelleo/laravcart": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Manuel\\Laravcart\\": "src/" 
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Manuel\\Laravcart\\LaravcartServiceProvider"
+            ],
+            "aliases": {
+                "Laravcart": "Manuel\\Laravcart\\Facades\\Laravcart"
+            }
+        }
+    }
+}
